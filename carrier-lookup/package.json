@@ -2,7 +2,7 @@
   "name": "carrier-lookup",
   "version": "1.0.0",
   "private": true,
-  "description": "Staff lookup of FCC fixed-broadband providers for a U.S. street address.",
+  "description": "Staff dashboard of FCC fixed-broadband providers for a U.S. street address.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +14,8 @@
   "dependencies": {
     "next": "^15.5.4",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "recharts": "^3.11.0"
   },
   "devDependencies": {
     "@types/node": "^22.19.0",

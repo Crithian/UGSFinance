@@ -17,7 +17,7 @@ const display = Fraunces({
 export const metadata: Metadata = {
   title: "Carrier Lookup",
   description:
-    "Look up fixed broadband providers filed for a U.S. street address using FCC Broadband Data Collection summaries.",
+    "Unified Global Solutions staff dashboard of FCC fixed-broadband providers for a U.S. street address.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

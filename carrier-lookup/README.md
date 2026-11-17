@@ -1,19 +1,20 @@
 # Carrier Lookup
 
-Staff tool for an internet and VoIP desk. Enter a U.S. street address and see the fixed broadband providers that filed service for the census block containing that address: provider name, technology, and the advertised speed tier.
+Staff dashboard for an internet and VoIP desk. Enter a U.S. street address and see the fixed broadband providers that filed service for the census block containing that address: summary counts, speed and technology charts, and each provider’s technology and advertised speed tier.
 
 Lookups run live on each search. The app does not ship with a provider database.
 
 ## What you get back
 
-For a matched address the page shows:
+For a matched address the dashboard shows:
 
-- The Census Bureau’s normalized address, so you can confirm the location
-- The 2020 census block GEOID, county, coordinates, and how many broadband-serviceable locations are in the block
+- The Census Bureau’s normalized address and the 2020 census block GEOID, plus place, coordinates, and how many broadband-serviceable locations are in the block
+- Summary cards: providers in the block, how many offer at least 100/20 Mbps, how many file fiber, and the fastest advertised tier (the block summary does not include an exact Mbps integer)
+- A bar chart of providers by their best speed tier and a donut of providers by technology
 - One row per provider and technology: fiber, cable, DSL (copper), fixed wireless, satellite, or other
 - The max advertised speed as an FCC tier, plus how many locations in the block were filed at that tier
-- Filters and sorting by technology, provider name, and speed tier
-- Empty and error states when the address does not match or an upstream service fails
+- A technology filter, a carrier-name filter, and sortable columns
+- Loading, empty, and error states when a search is in progress, the address does not match, or an upstream service fails
 
 Results are **census-block** filings. A provider on the list filed service at one or more locations in the block. That is the finest geography the public FCC data can answer live. It is not a promise that the provider serves the specific building.
 
